@@ -1,0 +1,141 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'dagger.hilt.android.plugin'
+    id 'com.google.firebase.crashlytics'
+    id 'com.google.gms.google-services'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.arajangstudio.jajanhub_partner"
+        minSdk 21
+        targetSdk 31
+        versionCode 2
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        Properties properties = new Properties()
+        properties.load(project.rootProject.file('local.properties').newDataInputStream())
+        manifestPlaceholders = [MAPS_API_KEY: "${properties.getProperty('MAPS_API_KEY')}"]
+
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "BASE_URL", BASE_URL
+            buildConfigField "String", "BASE_URL_GEO", BASE_URL_GEO
+            buildConfigField "String", "MAPS_API_KEY", MAPS_API_KEY
+            buildConfigField "String", "API_KEY", API_KEY
+            buildConfigField "String", "API_KEY_GEO", API_KEY_GEO
+        }
+        debug {
+             buildConfigField "String", "BASE_URL", BASE_URL
+            buildConfigField "String", "BASE_URL_GEO", BASE_URL_GEO
+             buildConfigField "String", "MAPS_API_KEY", MAPS_API_KEY
+             buildConfigField "String", "API_KEY", API_KEY
+            buildConfigField "String", "API_KEY_GEO", API_KEY_GEO
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+}
+
+dependencies {
+
+    implementation "androidx.core:core-ktx:$coreVersion"
+    implementation "androidx.appcompat:appcompat:$appCompatVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+
+    //UI
+    implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
+    implementation "androidx.recyclerview:recyclerview:$recyclerViewVersion"
+    implementation "com.google.android.material:material:$materialVersion"
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'com.tbuonomo:dotsindicator:4.2'
+    implementation "androidx.browser:browser:1.4.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    implementation 'com.elconfidencial.bubbleshowcase:bubbleshowcase:1.3.1'
+
+    //loupe
+    implementation "io.github.igreenwood.loupe:loupe:$loupeVersion"
+    implementation 'io.github.igreenwood.loupe:extensions:1.0.1'
+
+    //navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigationVersion"
+
+    implementation 'com.google.android.gms:play-services-location:19.0.1'
+    implementation 'com.google.android.libraries.places:places:2.5.0'
+    implementation 'com.google.maps.android:android-maps-utils:0.5'
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+
+    implementation "androidx.work:work-runtime-ktx:$workVersion"
+
+    implementation 'com.kroegerama:bottomsheet-imagepicker:1.1.2'
+    implementation  'io.ak1.pix:piximagepicker:1.6.2'
+
+    //Firebase
+    implementation platform('com.google.firebase:firebase-bom:29.0.0')
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-config-ktx'
+    implementation 'com.google.firebase:firebase-perf-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-storage-ktx'
+    //paging
+    implementation "androidx.paging:paging-runtime-ktx:$pagingVersion"
+    //caroutine
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$livedataVersion"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$livedataVersion"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$livedataVersion"
+    //retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-moshi:$retrofitVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttpVersion"
+    implementation "com.squareup.moshi:moshi:$moshiVersion"
+    implementation "com.squareup.moshi:moshi-adapters:$moshiVersion"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+
+    //datastore
+    implementation "androidx.datastore:datastore-preferences:$dataStoreVersion"
+
+    // hilt
+    implementation "com.google.dagger:hilt-android:$hiltCoreVersion"
+    kapt "com.google.dagger:hilt-compiler:$hiltCoreVersion"
+    kaptAndroidTest "com.google.dagger:hilt-compiler:$hiltCoreVersion"
+    kapt "com.google.dagger:hilt-android-compiler:$hiltCoreVersion"
+
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+}
+

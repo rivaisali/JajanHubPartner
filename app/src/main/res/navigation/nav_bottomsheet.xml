@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_bottomsheet"
+    app:startDestination="@id/editMenuFragment">
+
+    <fragment
+        android:id="@+id/editMenuFragment"
+        android:name="com.arajangstudio.jajanhub_partner.ui.setting.fragment.EditMenuFragment"
+        android:label="EditMenuFragment" />
+    <fragment
+        android:id="@+id/listMenuFragment"
+        android:name="com.arajangstudio.jajanhub_partner.ui.setting.fragment.ListMenuFragment"
+        android:label="ListMenuFragment" />
+</navigation>

@@ -1,0 +1,92 @@
+{
+  "project_info": {
+    "project_number": "166230955987",
+    "project_id": "jajanhub-app",
+    "storage_bucket": "jajanhub-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166230955987:android:63d47f46a6e3743cb58126",
+        "android_client_info": {
+          "package_name": "com.arajangstudio.jajanhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166230955987-vshu8v102c9f1ufeiuttpkfgrbgkvqqh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arajangstudio.jajanhub",
+            "certificate_hash": "29569a8ee49b2779f04404718bd193fce0573d1b"
+          }
+        },
+        {
+          "client_id": "166230955987-t93tmur9olvm8ai785n3e60d8shkc9di.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGB2i2GyhhDYOwrstq_JM1rQcNrWgI7sI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166230955987-t93tmur9olvm8ai785n3e60d8shkc9di.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166230955987:android:622100537261866eb58126",
+        "android_client_info": {
+          "package_name": "com.arajangstudio.jajanhub_partner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166230955987-3040q74oj4ls30tmd425iv34so09a1cm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arajangstudio.jajanhub_partner",
+            "certificate_hash": "aa6e2dfef8cb48b0ec39434bf16c1f0a1ff07d27"
+          }
+        },
+        {
+          "client_id": "166230955987-b177is1smc4sedsgjs301vd64lnpd02g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arajangstudio.jajanhub_partner",
+            "certificate_hash": "29569a8ee49b2779f04404718bd193fce0573d1b"
+          }
+        },
+        {
+          "client_id": "166230955987-t93tmur9olvm8ai785n3e60d8shkc9di.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGB2i2GyhhDYOwrstq_JM1rQcNrWgI7sI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166230955987-t93tmur9olvm8ai785n3e60d8shkc9di.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

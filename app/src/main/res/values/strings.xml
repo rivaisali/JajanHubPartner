@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">JajanHub Partner</string>
+    <string name="logo_jajanhub">Logo JajanHub</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_login">Platform #1 Penghubung UMKM dengan Masyarakat</string>
+    <string name="term_condition">Dengan masuk, anda menyetujui Ketentuan Layanan, Kebijakan Privasi, dan Kebijakan Konten JajanHub.</string>
+    <string name="btn_next">Lanjutkan</string>
+    <string name="full_name">Nama Lengkap</string>
+    <string name="email">Email</string>
+    <string name="title_register">Silahkan Lengkap data dibawah ini untuk melanjutkan proses pendaftaran</string>
+    <string name="network_error">Periksa koneksi internet anda</string>
+    <string name="empty_registration">Nama Lengkap dan Email tidak boleh kosong</string>
+    <string name="success">Berhasil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_search">Nama Restoran, Jenis masakan, atau menu</string>
+    <string name="txtNear">Jajan Terdekat</string>
+    <string name="see_all">Lihat Semua</string>
+    <string name="txtPopular">Jajan Populer</string>
+    <string name="icon_search">Icon Search</string>
+    <string name="backdrop">Merchant Image</string>
+
+
+    <string name="default_lat">00.000000</string>
+    <string name="default_lng">00.000000</string>
+    <string name="enable_gps">Enable GPS</string>
+    <string name="required_for_this_app">Required for this app</string>
+    <string name="enable_now">Enable Now</string>
+    <string name="location_permission_not_granted">Location Permission not granted</string>
+
+    <string name="file_provider" translatable="false">com.arajangstudio.jajanhub_partner.fileprovider</string>
+    <string name="pick_single">Silahkan pilih foto anda</string>
+
+    <plurals name="pick_multi">
+        <item quantity="one">Satu gambar dipilih</item>
+        <item quantity="other">%1$d gambar dipilih</item>
+    </plurals>
+    <plurals name="pick_multi_more">
+        <item quantity="one">Silahkan pilih satu foto…</item>
+        <item quantity="other">Silahkan pilih %1$d foto…</item>
+    </plurals>
+    <string name="pick_multi_limit">Kamu memilih lebih dari %1$d foto…</string>
+    <string name="nearby_empty">Tidak ditemukan Jajanan Terdekat di area ini</string>
+    <string name="review_title">Review/Ulasan</string>
+    <string name="title_photo">Tambah Foto</string>
+    <string name="title_done_review">Terima kasih, ulasan anda akan sangat membantu kami, ulasan anda akan segera ditampilan</string>
+    <string name="titleRecommended">Rekomendasi untuk anda</string>
+    <string name="choose_favorite">Pilih Jajanan Favorit Anda</string>
+    <string name="title_favorite_search">Nama Makanan, Minuman Favorit anda</string>
+    <string name="btn_done">Selesai</string>
+    <string name="txt_waiting">Mohon Tunggu sebentar</string>
+    <string name="txt_title_find_location">Cari Lokasi UKM Anda disini</string>
+    <string name="txt_title_infomarker">Gerakan peta untuk mengatur lokasi yang lebih akurat</string>
+    <string name="txt_set_location">Konfimasi Lokasi Usaha</string>
+    <string name="txt_subtitle_infomarker">Letakan pin secara akurat di map</string>
+
+    <string name="update_app">Update App</string>
+    <string name="dialog_update_available_message">Halo, sekarang tersedia versi baru</string>
+    <string name="update_now">Update Sekarang</string>
+    <string name="later">Nanti</string>
+    <string name="logo">logo</string>
+</resources>
